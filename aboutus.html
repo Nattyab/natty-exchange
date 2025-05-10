@@ -1,0 +1,230 @@
+<section>
+    <div class="bg-white">
+        <a href="index.html" class="btn btn-primary rounded-pill bg-black">
+            Home <i class="fa-solid fa-shopping-cart"></i>
+        </a>
+</div> 
+</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>realestate</title>
+  <style>
+    /* Reset & base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 20px;
+    }
+    a {
+      color: #0e0b09;
+      text-decoration: none;
+    }
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.4rem;
+    }
+    h2 {
+      font-size: 1.6rem;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    header {
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      color: #070706;
+      margin-bottom: 12px;
+    }
+    header p {
+      color: #4b5563;
+      font-size: 1.1rem;
+    }
+    main {
+      max-width: 900px;
+      width: 100%;
+    }
+    section {
+      background: rgba(157, 171, 175, 0.904);
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      padding: 24px;
+      animation: fadeInUp 0.8s ease forwards;
+    }
+    section:nth-child(even) {
+      animation-delay: 0.15s;
+    }
+    section:nth-child(odd) {
+      animation-delay: 0s;
+    }
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .team-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+    .team-member {
+      background: #f3f4f6;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .team-member:hover,
+    .team-member:focus-within {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+    .team-photo {
+      width: 80px;
+      height: 80px;
+      background: #2563eb;
+      border-radius: 50%;
+      margin: 0 auto 12px;
+      color: white;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      user-select: none;
+      box-shadow: inset 0 -4px 6px rgba(0,0,0,0.2);
+    }
+    .team-name {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+    .team-role {
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+    footer {
+      width: 100%;
+      max-width: 900px;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 400px) {
+      body {
+        padding: 12px 10px;
+      }
+      header h1 {
+        font-size: 1.8rem;
+      }
+      section {
+        padding: 18px;
+      }
+      .team-photo {
+        width: 64px;
+        height: 64px;
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <h1>About REALTGATE Real-Estate</h1>
+    <p>We buil the best experiences that power's success.</p>
+  </header>
+
+  <main role="main">
+    <section aria-labelledby="overview-title">
+      <h2 id="overview-title">About</h2>
+      <p>At REALTGATE, we pride ourselves on being your trusted partner in the real estate journey. With over 20 years of experience, our dedicated team is committed to connecting you with your perfect home or investment property. We blend deep local knowledge with personalized service to ensure your satisfaction every step of the way. To make property buying, selling, and renting simple, transparent, and enjoyable. We aim to create lasting relationships with our clients by delivering expert advice, innovative solutions, and unparalleled customer support</p>
+    </section>
+
+    <section aria-labelledby="mission-title">
+      <h2 id="mission-title">Our Mission</h2>
+      <p>At [REALTGATE], our mission is to empower individuals and families to achieve their real estate dreams with confidence and ease. We are dedicated to providing exceptional service, expert guidance, and innovative solutions tailored to each client's unique needs.</p>
+      <p>Together, we aim to create vibrant communities and help our clients find not just a property, but a place they can truly call home. Your goals are our priority, and we are here to turn your real estate aspirations into reality.</p>
+    </section>
+
+    <section aria-labelledby="vision-title">
+      <h2 id="vision-title">Our Vision</h2>
+      <p>At [REALTGATE], our vision is to redefine the real estate experience by creating a seamless, innovative, and client-centered approach to buying, selling, and investing in properties. We aspire to be a trusted leader in the industry, known for our commitment to excellence, integrity, and community engagement.
+
+We envision a future where every individual and family has access to the resources and support they need to make informed real estate decisions. By leveraging cutting-edge technology and market insights, we aim to empower our clients with the knowledge and tools necessary to navigate the ever-evolving real estate landscape.
+
+Our goal is to foster vibrant communities where people can thrive, and to be a catalyst for positive change in the neighborhoods we serve. We believe that real estate is not just about transactions; it’s about building connections, enhancing lives, and creating lasting legacies. Together, we will shape a brighter future in real estate, one home at a time.</p>
+    </section>
+
+    <section aria-labelledby="team-title">
+      <h2 id="team-title">Meet The Team</h2>
+      <div class="team-grid" role="list">
+        <article class="team-member" role="listitem" tabindex="0" aria-label="Alice Johnson, CEO">
+          <div class="team-photo" aria-hidden="true">GN</div>
+          <div class="team-name">Gold Nw</div>
+          <div class="team-role">promoter</div>
+        </article>
+        <article class="team-member" role="listitem" tabindex="0" aria-label="Raj Patel, Lead Developer">
+          <div class="team-photo" aria-hidden="true">AW</div>
+          <div class="team-name">Abraham Nw</div>
+          <div class="team-role">Lead Developer</div>
+        </article>
+        <article class="team-member" role="listitem" tabindex="0" aria-label="Maria Gomez, UX Designer">
+          <div class="team-photo" aria-hidden="true">WD</div>
+          <div class="team-name">NAtty Ab</div>
+          <div class="team-role">web Designer</div>
+        </article>
+        <article class="team-member" role="listitem" tabindex="0" aria-label="Liam Smith, Marketing Head">
+          <div class="team-photo" aria-hidden="true">SF</div>
+          <div class="team-name">Super Felix</div>
+          <div class="team-role">Marketing Head</div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo"> 
+    <p><p>&copy; 2025 My Website Natty. All rights reserved.</p> <a href="mailto:contact@modernco.com">Contact Us</a></p>
+    <p><a href="properties.html">Propertie</a></p>
+    <p><a href="index.html">Home</a></p>
+  </footer>
+</body>
+</html>
+</content>
+</create_file>
